@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimoni Premium | Desain Interior Tapos Depok</title>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #f8fbff, #eef3f9);
+      }
+
+      .section-testimoni {
+        padding: 90px 20px;
+        text-align: center;
+      }
+
+      .section-testimoni h2 {
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .section-testimoni p {
+        color: #6c757d;
+        margin-bottom: 60px;
+      }
+
+      .swiper {
+        max-width: 1200px;
+        padding-bottom: 70px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        width: 350px;
+        min-height: 350px;
+        padding: 35px;
+        border-radius: 24px;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+        transition: 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        position: relative;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+      }
+
+      .quote {
+        font-size: 55px;
+        color: #edf1f7;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-weight: 700;
+      }
+
+      .review-text {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #444;
+      }
+
+      /* RATING */
+      .rating {
+        margin: 10px 0 20px 0;
+      }
+
+      .rating i {
+        font-size: 18px;
+        margin-right: 6px;
+        color: #e4e5e9;
+        transform: scale(0.5);
+        opacity: 0;
+        animation: popStar 0.6s ease forwards;
+      }
+
+      .rating i:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .rating i:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .rating i:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .rating i:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .rating i:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes popStar {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+          color: #e4e5e9;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+          color: #ffc107;
+        }
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+      }
+
+      .avatar {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #4e73df, #1cc88a);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 600;
+        margin-right: 15px;
+      }
+
+      .user-info h4 {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .user-info span {
+        font-size: 13px;
+        color: #8c8c8c;
+      }
+
+      .swiper-pagination-bullet {
+        background: #4e73df;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #4e73df;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-testimoni">
+      <h2>Apa Kata Klien Kami</h2>
+      <p>Desain profesional dengan harga sesuai budget</p>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide Template -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Awalnya saya cukup khawatir karena luas rumah kami terbatas
+                    dan budget juga sudah ditentukan. Setelah diskusi dan
+                    melihat preview desain 3D, saya jadi lebih yakin. Hasil
+                    akhirnya benar-benar membuat ruang terasa lebih lega,
+                    terang, dan tetap sesuai anggaran tanpa biaya tambahan yang
+                    mengejutkan.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">AR</div>
+                <div class="user-info">
+                  <h4>Andi Rahman</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicate and modify text for total 7 slides -->
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Timnya responsif dan sangat detail menjelaskan setiap
+                    pilihan material serta layout. Saya merasa dilibatkan dalam
+                    setiap keputusan. Proses dari desain sampai realisasi
+                    berjalan lancar dan hasilnya sesuai dengan visual yang
+                    ditampilkan di awal.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">DS</div>
+                <div class="user-info">
+                  <h4>Dewi Sari</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Yang paling saya rasakan adalah perubahan fungsi ruangan.
+                    Storage jadi jauh lebih optimal dan tidak ada lagi sudut
+                    yang terbuang sia-sia. Sekarang rumah terasa lebih rapi,
+                    nyaman, dan enak dipandang setiap hari.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">FM</div>
+                <div class="user-info">
+                  <h4>Fajar Maulana</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Salah satu alasan saya memilih jasa ini karena transparansi
+                    biayanya jelas sejak awal. Semua rincian dijelaskan secara
+                    terbuka, jadi saya tidak khawatir soal hidden cost.
+                    Profesional dan bisa dipercaya.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">LN</div>
+                <div class="user-info">
+                  <h4>Lina Nurhayati</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Desainnya modern minimalis tapi tetap hangat untuk keluarga.
+                    Banyak tamu yang datang mengira kami melakukan renovasi
+                    besar, padahal hanya optimasi interior. Benar-benar
+                    meningkatkan tampilan rumah secara signifikan.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">RS</div>
+                <div class="user-info">
+                  <h4>Rudi Santoso</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Pengerjaan dilakukan sesuai timeline yang disepakati. Detail
+                    finishing terlihat rapi dan presisi. Bahkan setelah selesai,
+                    tim masih follow up memastikan semuanya sesuai harapan kami.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">MY</div>
+                <div class="user-info">
+                  <h4>Maya Yuliana</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div>
+                <div class="quote">“</div>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review-text">
+                  <div class="review-text">
+                    Saya sempat membandingkan beberapa penyedia jasa di Depok
+                    sebelum memutuskan. Dari segi harga, kualitas desain, dan
+                    komunikasi, di sini paling masuk akal. Hasilnya sesuai
+                    ekspektasi dan worth the investment.
+                  </div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">HB</div>
+                <div class="user-info">
+                  <h4>Hendra Budi</h4>
+                  <span>Tapos, Depok</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.mySwiper', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
